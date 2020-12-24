@@ -1,0 +1,38 @@
+@mixin triggers($url) {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $url;
+cursor: pointer;
+}
+
+
+.slider {
+  margin: 108px auto;
+    .sliderContainer{
+      max-width: 725px;
+      margin: 0 auto;
+      #slider {
+
+    .owl-item {
+     img {
+      width: 100%;
+    }
+  }
+        .owl-nav {
+          margin: 0;
+          .owlPrevBtn {
+            @include triggers((url(../img/slider/chevron-left.png)));
+            left: -100px;
+          }
+          .owlNextBtn {
+            @include triggers((url(../img/slider/chevron-right.png)));
+            right: -100px;
+          }
+        }
+      }
+
+    }
+}

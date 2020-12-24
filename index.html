@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-info">
+            <a href="#">
+                <img src="./src/img/header/logo.svg" alt="" class="header-info__img">
+            </a>
+            <div class="header-info__company">
+                <p class="header-info__title">Официальный представитель  </p>
+                <p class="header-info__subtitle">Garmin, Polar, Suunto</p>
+            </div>
+            <div class="header-info__contacts">
+                <a href="tel:+7 (499) 922-89-74 " class="header-info__tel">+7 (499) 922-89-74 </a>
+                <button class="header-info__callBackBtn">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="home">
+        <div class="container">
+            <h1 class="home__title">Подбор пульсометра </h1>
+            <h2 class="home__subtitle">с учётом Вашего уровня подготовки</h2>
+
+            <ul class="list">
+                <li class="list-items">
+                    <img src="./src/img/home/timer.svg" alt="" class="list-items__img">
+                    <p class="list-items_title">Время подбора: 10 минут</p>
+                </li>
+                <li class="list-items">
+                    <img src="./src/img/home/hand.svg" alt="" class="list-items__img">
+                    <p class="list-items_title">Бесплатная доставка </p>
+                </li>
+                <li class="list-items">
+                    <img src="./src/img/home/message.svg" alt="" class="list-items__img">
+                    <p class="list-items_title">Ответим <br> на все вопросы</p>
+                </li>
+            </ul>
+                <div class="home__order">
+                    <button class="home__btn">Заказать консультацию</button>
+                    <div class="home__catalog">или <a href="#" class="home__moreBtn">Перейти в каталог</a></div>
+                </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <h3 class="advantages__title">Наши преимущества</h3>
+            <div class="row">
+                <div class="col-4">
+                    <img src="./src/img/advantages/cup.png" alt="" class="advantages__img">
+                    <h4 class="advantages__subtitle">Делимся опытом</h4>
+                    <p class="advantages__text">Наши сотрудники всегда готовы поделиться своим опытом,
+                        так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
+                </div>
+                <div class="col-4">
+                    <img src="./src/img/advantages/heart.png" alt="" class="advantages__img">
+                    <h4 class="advantages__subtitle">Заботимся о здоровье</h4>
+                    <p class="advantages__text">Мы работаем для того,
+                        чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="./src/img/advantages/shoe.png" alt="" class="advantages__img">
+                    <h4 class="advantages__subtitle">Учим бегать</h4>
+                    <p class="advantages__text">Помогаем с обучением
+                        правильной технике бега!
+                        Дружим с крупнейшей школой бега в России - <span class="advantages__redText">I LOVE RUNNING.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="consultation">
+        <div class="container">
+            <h3 class="consultation__title">Получите бесплатную консультацию <br> по подбору пульсометра </h3>
+            <p class="consultation__subtitle">Просто заполните форму заявки <br>  и мы перезвоним вам в течении 10 минут</p>
+            <form class="consultation__form">
+                <label><input type="text" class="consultation__name" placeholder="Ваше имя">
+                </label>
+                <label><input type="tel" class="consultation__name" placeholder="Ваш телефон">
+                </label>
+                <label><input type="email" class="consultation__name" placeholder="Ваш E-mail" required>
+                </label>
+                <button class="consultation__btn">Заказать консультацию</button>
+            </form>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="sliderContainer">
+            <div class="owl-carousel owl-theme owl-loaded" id="slider">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item"><img src="./src/img/slider/slide-1.png" alt=""></div>
+                        <div class="owl-item"><img src="./src/img/slider/slide-2.png" alt=""></div>
+                        <div class="owl-item"><img src="./src/img/slider/slide-3.png" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="owlPrevBtn"></div>
+                    <div class="owlNextBtn"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h3 class="catalog__title">Каталог пульсометров</h3>
+
+            <div class="catalog-tabs">
+
+                <ul class="catalog-tabs__caption">
+                    <li class="catalog-tabs__tab catalog-tabs__tab_active"><div class="catalog-tabs__skew">Для фитнеса</div></li>
+                    <li class="catalog-tabs__tab"><div class="catalog-tabs__skew">Для бега</div></li>
+                    <li class="catalog-tabs__tab"><div class="catalog-tabs__skew">Для триатлона</div></li>
+                </ul>
+
+                <div class="catalog-tabs__content catalog-tabs__content_active">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="catalog-card">
+                                    <div class="catalog-card__wrapper">
+                                        <div class="catalog-card__item">
+                                            <img src="./src/img/catalog/polar.png" alt="" class="catalog-card__img">
+                                            <h3 class="catalog-card__title">Пульсометр Polar FT1  </h3>
+                                            <p class="catalog-card__descr">Для первых шагов в тренировках, основанных на сердечном ритме </p>
+                                            <a href="" class="catalog-card__moreBtn">ПОДРОБНЕЕ</a>
+                                        </div>
+                                        <div class="catalog-card__hidden">
+                                            <ul class="catalog-card__list">
+                                                <li class="catalog-card__list-items">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                                <li class="catalog-card__list-items">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                                <li class="catalog-card__list-items">Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                                <li class="catalog-card__list-items">Вы сможете посмотреть данные по 10 тренировкам.</li>
+                                            </ul>
+                                            <a href="#" class="catalog-card__backBtn">Назад</a>
+                                        </div>
+                                    </div>
+                                        <div class="catalog-card__line"></div>
+                                        <div class="catalog-card__bottom">
+                                            <div class="catalog-card__price">
+                                                <div class="catalog-card__oldPrice">4 750 руб. </div>
+                                                <div class="catalog-card__newPrice">4 500 руб. </div>
+                                            </div>
+                                            <div class="catalog-card__buyBtn">Купить</div>
+                                        </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+
+                            </div>
+                            <div class="col-4">
+
+                            </div>
+                        </div>
+                </div>
+
+                <div class="catalog-tabs__content">
+                    sfsagadgadd
+
+                </div>
+
+                <div class="catalog-tabs__content">
+                    <div class="row">
+                        fasgdafhsfa
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="footer">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d730.9284462899375!2d74.59567631921992!3d42.878884878666035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7e0661974b3%3A0xa65743c8c65a2c89!2z0JrQsNC_0LjRgtCw0Lsg0KHRgtGA0L7QuSDQmNC90LLQtdGB0YI!5e0!3m2!1sru!2skg!4v1608389972057!5m2!1sru!2skg" width="100%" height="630px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+</footer>
+
+<div class="overlay">
+    <div class="popup">
+        <form class="form-consult">
+            <h3 class="form-consult__title">Получите бесплатную консультацию <br> по подбору пульсометра </h3>
+            <p class="form-consult__subtitle">Просто заполните форму заявки <br>  и мы перезвоним вам в течении 10 минут</p>
+            <label><input type="text" class="form-consult__name" placeholder="Ваше имя">
+            </label>
+            <label><input type="tel" class="form-consult__name" placeholder="Ваш телефон">
+            </label>
+            <label><input type="email" class="form-consult__name" placeholder="Ваш E-mail">
+            </label>
+            <button class="form-consult__btn">Заказать консультацию</button>
+        </form>
+        <div class="thanks">
+            <h3 class="thanks__title">Спасибо за вашу заявку</h3>
+            <p class="thanks__subtitle">Наш менеджер свяжется <br> с вами в ближайшее время</p>
+        </div>
+        <div class="popup__close"></div>
+    </div>
+</div>
+
+
+<script src="./src/libs/jquery/jquery.js"></script>
+<script src="./src/libs/owl/owl.carousel.min.js"></script>
+<script src="./src/js/main.js"></script>
+</body>
+</html>

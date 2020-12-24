@@ -1,0 +1,10 @@
+.slider {
+  padding: 90px 0 105px;
+}
+.slider .sliderContainer {
+  max-width: 725px;
+  margin: 0 auto;
+}
+.slider .sliderContainer .owl-item img {
+  width: 100%;
+}

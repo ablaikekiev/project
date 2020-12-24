@@ -1,0 +1,35 @@
+.consultation {
+  background: url("../img/consultation/consultation.png") center/cover no-repeat;
+  padding: 100px 0 92px;
+
+  &__title{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: $museo700;
+    margin-bottom: 80px;
+    max-width: 769px;
+  }
+  &__subtitle{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+
+  }
+  &__name{
+    width: 301px;
+    height: 51px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 14px;
+    outline: none;
+    padding: 0 21px;
+  }
+  &__btn{
+    @include redBtns(301px, 56px, 16px);
+    margin-top: 19px;
+  }
+}

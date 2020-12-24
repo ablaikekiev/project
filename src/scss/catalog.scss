@@ -1,0 +1,145 @@
+.catalog{
+  &__title{
+    font-size: 30px;
+    font-family: $museo700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  &-tabs{
+    margin-bottom: 60px;
+    &__caption{
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+    &__tab{
+      margin-right: 10px;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border: 2px solid #d0d0d0;
+      text-transform: uppercase;
+      color: #6b6b6b;
+      transform: skew(-25deg);
+      cursor: pointer;
+      transition: 0.5s;
+      &_active{
+        color: #FFFFFF;
+        background: $colorRed;
+        border: none;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &__skew{
+      transform: skew(25deg);
+    }
+    &__content {
+      display: none;
+      margin-top: 74px;
+      &_active{
+        display: block;
+      }
+    }
+    &__wrapper {
+
+    }
+  }
+  &-card{
+    overflow: hidden;
+    width: 100%;
+    height: 442px;
+    border: 1px solid #E8E8E8;
+    padding: 25px 20px 25px;
+    margin-bottom: 20px;
+    &__wrapper{
+      width: 200%;
+      display: flex;
+
+    }
+    &__item{
+      width: 50%;
+      text-align: center;
+      transition: 0.5s;
+      &_active{
+        transform: translateX(-110%);
+      }
+    }
+    &__img{
+      max-width: 160px;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 30px;
+    }
+    &__hidden{
+      width: 50%;
+      padding-left: 20px;
+      transition: 0.5s;
+    }
+    &__list{
+      list-style-type: none;
+      margin-bottom: 55px;
+      max-height: 261.6px;
+      overflow: auto;
+      &_active{
+        transform: translateX(110%);
+
+      }
+      &-items{
+        background: url("../img/catalog/marker.png") top left/5px 5px no-repeat;
+        padding-left: 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+    }
+    &__descr{
+      font-size: 14px;
+      font-family: $museo300;
+      margin-bottom: 15px;
+      max-height: 33.6px;
+      overflow: auto;
+    }
+    &__moreBtn{
+      display: inline-block;
+      color: $colorRed;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &__backBtn{
+      display: block;
+      color: $colorRed;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &__line{
+      border-top: 1px solid #E8E8E8;
+    }
+    &__bottom{
+      padding: 20px 0 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__oldPrice{
+      text-decoration: line-through;
+      font-size: 14px;
+      font-family: $museo300;
+      color: #555555;
+      margin-bottom: 10px;
+      line-height: 14px;
+    }
+    &__newPrice{
+      font-size: 20px;
+      font-family: $museo700;
+
+    }
+    &__buyBtn{
+      @include redBtns(130px, 40px, 14px)
+    }
+  }
+}
+

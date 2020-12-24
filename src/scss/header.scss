@@ -1,0 +1,40 @@
+.header{
+  padding-top: 21px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  &-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    &__company{
+      text-align: center;
+    }
+    &__title{
+    font-size: 11px;
+      margin-bottom: 12px;
+      line-height: 11px;
+    }
+    &__subtitle{
+    font-size: 18px;
+      font-family: $museo700;
+    }
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+    }
+    &__tel {
+      font-size: 18px;
+      text-align: right;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 7px;
+      font-family: $museo700;
+    }
+    &__callBackBtn {
+      @include redBtns(150px, 31px, 12px)
+    }
+  }
+}

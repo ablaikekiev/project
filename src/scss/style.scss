@@ -1,0 +1,54 @@
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+@import "../libs/owl/assets/owl.carousel.min.css";
+@import "../libs/owl/assets/owl.theme.default.min.css";
+@import "../fonts/museo/stylesheet.css";
+
+
+$museo300: 'Museo Sans Cyrl 300';
+$museo500: 'Museo Sans Cyrl 500';
+$museo700: 'Museo Sans Cyrl 700';
+body {
+  font-family: $museo500;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+  .container{
+    max-width: 940px;
+  }
+}
+@media (min-width: 992px) {
+  .container{
+    max-width: 940px;
+  }
+}
+$colorRed: #C70101;
+@mixin redBtns($width, $height, $fz){
+  width: $width;
+  height: $height;
+  background: $colorRed;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: $fz;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+@import "header";
+@import "home";
+@import "consultation";
+@import "slider";
+@import "advantages";
+@import "catalog";
+@import "popup";
+
